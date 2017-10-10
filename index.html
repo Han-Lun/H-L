@@ -7,372 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="swiper/swiper-3.4.2.min.css">
   <link rel="stylesheet" href="swiper/animate.min.css">
-  <style>
-  /*
-    .swiper-container {
-      width: 600px;
-      height: 300px;
-      background-color: red;
-    }
-    */
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
-    html, body {
-      height: 100%;
-      background: linear-gradient(to top,#00b1eb,#0067a7);
-    }
-    @media screen and (max-width: 320px) {
-      html {
-        font-size: 16px;
-      }
-    }
-    @media screen and (min-width: 321px) {
-      html {
-        font-size: 16px;
-      }
-    }
-    @media screen and (min-width: 380px) {
-      html {
-        font-size: 18.5px;
-      }
-    }
-    @media screen and (min-width: 440px) {
-      html {
-        font-size: 40px;
-      }
-    }
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-    .swiper-slide {
-      position: relative;
-    }
-    .img1 {
-      animation-direction: alternate;
-    }
-    .img2 {
-      position: absolute;
-      left: 500px;
-    }
-    @-webkit-keyframes change {
-      from {
-        transform: rotate(0deg)
-      }
-      to {
-        transform: rotate(360deg)
-      }
-    }
-    .ani.red{
-    	animation: change 1s linear 0s infinite;
-    }
-    .upimg{
-    	width: 100%;
-    	position: relative;
-    }
-    .upimg img{
-    	width: 100%;
-    	position: absolute;
-    	top: -45px;
-    }
-    /*.downimg{
-    	width: 100%;
-    	position: relative;
-    	bottom: 0;
-    }
-    .downimg img{
-    	width: 100%;
-    	position: absolute;
-    }*/
-   .big_box{
-   	width: 100%;
-   	height: 100%;
-   	position: relative;
-   }
-   .big_box .video{
-   	width: 2rem;
-   	height: 2rem;
-   	position: absolute;
-   	right: 1rem;
-   	top: 3rem;
-   	z-index: 999;
-   	background: url(images/music.svg) no-repeat;
-   	background-size: 100%;
-   	animation: change 3s linear 0s infinite;
-   }
-   .big_box .star{
-   	width:100%;
-   	height: 90%;
-   	position: absolute;
-    animation: close 1s ease 0s infinite alternate;
-   	background: url(images/star.png) no-repeat center 0;
-   }
-   .head{
-   	width: 2.6rem;
-   	height: 2.3rem;
-   	position: absolute;
-   	top: 12.6rem;
-   	left: 10.8rem;
-   	background:#007ebc url(images/happy.png) no-repeat;
-   }
-   .left{
-   	width: 18rem;
-   	height: 16.3rem;
-   	position: absolute;
-   	top: 7.0rem;
-   	left: 0.5rem;
-   	background: url(images/all.png) no-repeat;
-   }
-   .left_left{
-   	width: 3.5rem;
-   	height: 3.12rem;
-   	position: absolute;
-   	top: 19rem;
-   	left: 7.5rem;
-   	background: url(images/leftfu.png) no-repeat;
-   }
-   .right_right{
-   	width: 3.5rem;
-   	height: 3.12rem;
-   	position: absolute;
-   	top: 19rem;
-   	left: 13.3rem;
-   	background: url(images/rightfu.png) no-repeat;
-   }
-   .no{
-   	width: 1.4rem;
-   	height: 1.4rem;
-   	border: 2px solid #fff;
-   	border-radius: 50%;
-   	color: #000;
-   	margin-bottom: 2px;
-		text-align: center;
-		background-color: #1dafdd;
-   }
-   .left_box{
-   	position: absolute;
-   	top: 16rem;
-   	left: 11.5rem;
-   }
-   .please{
-   	width: 100%;
-   	position: absolute;
-   	top: 27rem;
-   	margin-left: 3rem;
-   	font-size: 20px;
-   }
-   .y2018{
-   	width: 7rem;
-   	height: 3.5rem;
-   	position: absolute;
-   	top: 31rem;
-   	left: 8rem;
-   	background: url(images/2018.png) no-repeat;
-   }
-   .line2018{
-   	width: 100%;
-   	height: 1.25rem;
-   	position: absolute;
-   	top: 35rem;
-   	left: 4rem;
-   	background: url(images/down-line.png) no-repeat;
-   }
-   .downimg{
-   	width: 100%;
-   	position: absolute;
-   	bottom: 0;
-   	left: -0.25rem;
-   	display: block;
-   }
-   .downimg img{
-   	width: 110%;
-   	float: left;
-   }
-   @-webkit-keyframes close{
-    	0%{
-    		opacity: 0;
-    	}
-    	100%{
-    		opacity: 1;
-    	}
-    }
-    .title{
-    	width: 16rem;
-    	height: 16rem;
-    	margin-left: 2rem;
-    	position: absolute;
-    	top: -3rem;
-    	background: url(images/all1.png) no-repeat center 0;
-    }
-    .title h1{
-    	position: absolute;
-    	top: 11rem;
-    	left: 5.8rem;
-    	color: #fff;
-    }
-    .er_box{
-    	font-size: 25px;
-    	position: absolute;
-    	top: 14rem;
-    	padding: 0 2rem;
-    	color: #fff;
-    }
-    .xuehua_fan{
-    	width: 2.1rem;
-    	height: 2rem;
-    	position: absolute;
-    	top: 13rem;
-			right: 1rem;
-    	background: url(images/xuehua.png) no-repeat center 0;
-    }
-    .xuehua1_fan{top: 18rem;}
-    .xuehua2_fan{top: 23rem;}
-    .xuehua3_fan{top: 28rem;}
-    .xuehua4_fan{top: 33rem;}
-    .xian_fan{
-    	width: 2.1rem;
-    	height: 2rem;
-    	position: absolute;
-    	top: 14rem;
-    	right: 2rem;
-    	background: url(images/line1.png) no-repeat center 0;
-    }
-    .xian1_fan{top: 19rem;} 
-    .xian2_fan{top: 24rem;}
-    .xian3_fan{top: 29rem;}
-    .sm_xuehua_fan{
-    	width: 1rem;
-    	height: 1rem;
-    	position: absolute;
-    	top: 16rem;
-    	right: 3.5rem;
-    	background: url(images/small-xuehau.png) no-repeat center 0;
-    }
-    .sm_xuehua1_fan{top: 21rem;}
-    .sm_xuehua2_fan{top: 26rem;}
-    .sm_xuehua3_fan{top: 31rem;}
-    .xianfan_fan{
-    	width: 2.1rem;
-    	height: 2rem;
-    	position: absolute;
-    	top: 16.5rem;
-    	right: 2rem;
-    	background: url(images/line2.png) no-repeat center 0;
-    }
-    .xianfan1_fan{top: 21.5rem;}
-    .xianfan2_fan{top: 26.5rem;}
-    .xianfan3_fan{top: 31.5rem;}
-    .xuehua{
-    	width: 2.1rem;
-    	height: 2rem;
-    	position: absolute;
-    	top: 13rem;
-    	left: 1rem;
-    	background: url(images/xuehua.png) no-repeat center 0;
-    }
-    .xuehua1{top: 18rem;}
-    .xuehua2{top: 23rem;}
-    .xuehua3{top: 28rem;}
-    .xuehua4{top: 33rem;}
-    .xian{
-    	width: 2.1rem;
-    	height: 2rem;
-    	position: absolute;
-    	top: 14rem;
-    	left: 2rem;
-    	background: url(images/line2.png) no-repeat center 0;
-    }
-    .xian1{top: 19rem;} 
-    .xian2{top: 24rem;}
-    .xian3{top: 29rem;}
-    .sm_xuehua{
-    	width: 1rem;
-    	height: 1rem;
-    	position: absolute;
-    	top: 16rem;
-    	left: 3.5rem;
-    	background: url(images/small-xuehau.png) no-repeat center 0;
-    }
-    .sm_xuehua1{top: 21rem;}
-    .sm_xuehua2{top: 26rem;}
-    .sm_xuehua3{top: 31rem;}
-    .xianfan{
-    	width: 2.1rem;
-    	height: 2rem;
-    	position: absolute;
-    	top: 16.5rem;
-    	left: 2rem;
-    	background: url(images/line1.png) no-repeat center 0;
-    }
-    .xianfan1{top: 21.5rem;}
-    .xianfan2{top: 26.5rem;}
-    .xianfan3{top: 31.5rem;}
-    .text_zhufu{
-    	font-size: 25px;
-    	position: absolute;
-    	top: 16rem;
-    	left: 2rem;
-    	padding: 0 3rem;
-    	color: #fff;
-    }
-    .third-title img {
-    	/*position: absolute;*/
-    	margin-left: -1rem;
-    	width: 100%;
-    	height: 20rem;
-    }
-    .third-title p {
-    	color: #FFFFFF;
-    	font-size: 2rem;
-    	position: absolute;
-    	top: 8.3rem;
-    	left: 8.5rem;
-    }
-    .dogimg img {
-    	width: 50%;
-    	height: 25%;
-    	position: absolute;
-    	top: 12rem;
-    	left: 0.5rem;
-    }
-    .third-article {
-    	width: 10rem;
-    	height: 50rem;
-    	position: absolute;
-    	top: 14rem;
-    	right: 0.5rem;
-    	color: #FFFFFF;
-    }
-    .dogimgs img {
-    	width: 50%;
-    	height: 25%;
-    	position: absolute;
-    	top: 25rem;
-    	right: 0.5rem;
-    }
-    .third-articles {
-    	width: 10rem;
-    	height: 50rem;
-    	position: absolute;
-    	top: 27rem;
-    	left: 0.5rem;
-    	color: #FFFFFF;
-    }
-
-   /*
-   .right{
-   	width: 9.1rem;
-   	height: 16.3rem;
-   	position: absolute;
-   	top: 10.2rem;
-   	right: 2.9rem;
-   	background: url(images/right.png) no-repeat;
-   }*/
-  </style>
+  <link rel="stylesheet" type="text/css" href="style/index.css"/>
 </head>
 <body>
   <!-- div.swiper-container>div.swiper-wrapper>div.swiper-slide*5{$} -->
@@ -726,6 +361,42 @@
       			<audio loop="" src="MP3/music.mp3" autoplay="" preload=""></audio>
       		</div>
       		<div class="star"></div>
+      		<div class="third-title">
+	      		<img src="images/all1.png" 
+	      			class="ani "
+	      			swiper-animate-effect="fadeInLeft"
+	      			swiper-animate-duration="1s"
+	      			swiper-animate-delay="0s"
+	      			alt="" />
+	      		<p class="ani "
+	      			swiper-animate-effect="fadeInRight"
+	      			swiper-animate-duration="1s"
+	      			swiper-animate-delay="0s">元旦快乐</p>
+	      	</div>
+      		<p class="final-1 ani "
+	      			swiper-animate-effect="fadeInLeft"
+	      			swiper-animate-duration="1s"
+	      			swiper-animate-delay="2s">感谢有你</p>
+      		<p class="final-2 ani "
+	      			swiper-animate-effect="fadeInRight"
+	      			swiper-animate-duration="1s"
+	      			swiper-animate-delay="3s">一路相伴</p>
+      		<p class="final-3 ani "
+	      			swiper-animate-effect="fadeInLeft"
+	      			swiper-animate-duration="1s"
+	      			swiper-animate-delay="4s">2018</p>
+      		<p class="final-4 ani "
+	      			swiper-animate-effect="fadeInRight"
+	      			swiper-animate-duration="1s"
+	      			swiper-animate-delay="5s">元旦快乐</p>
+      		<p class="final-5 ani "
+	      			swiper-animate-effect="fadeInLeft"
+	      			swiper-animate-duration="1s"
+	      			swiper-animate-delay="6s">新年快乐</p>
+      		<p class="final-6 ani "
+	      			swiper-animate-effect="fadeInUp"
+	      			swiper-animate-duration="1s"
+	      			swiper-animate-delay="7s">出处：优才学院web1707班</p>
       		<div class="line2018 ani"
       			swiper-animate-effect="fadeInUp"
       			swiper-animate-duration="1s"
