@@ -100,12 +100,12 @@
    	background: url(images/star.png) no-repeat center 0;
    }
    .head{
-   	width: 5.1rem;
-   	height: 2.7rem;
+   	width: 2.6rem;
+   	height: 2.3rem;
    	position: absolute;
-   	top: 8.4rem;
-   	left: 9.5rem;
-   	background: ;
+   	top: 12.6rem;
+   	left: 10.8rem;
+   	background:#007ebc url(images/happy.png) no-repeat;
    }
    .left{
    	width: 18rem;
@@ -114,6 +114,71 @@
    	top: 7.0rem;
    	left: 0.5rem;
    	background: url(images/all.png) no-repeat;
+   }
+   .left_left{
+   	width: 3.5rem;
+   	height: 3.12rem;
+   	position: absolute;
+   	top: 12rem;
+   	left: 7rem;
+   	background: url(images/leftfu.png) no-repeat;
+   }
+   .right_right{
+   	width: 3.5rem;
+   	height: 3.12rem;
+   	position: absolute;
+   	top: 12rem;
+   	left: 12.5rem;
+   	background: url(images/rightfu.png) no-repeat;
+   }
+   .no{
+   	width: 1.4rem;
+   	height: 1.4rem;
+   	border: 2px solid #000;
+   	border-radius: 50%;
+   	color: #000;
+   	margin-bottom: 2px;
+		text-align: center;
+		background-color: #1dafdd;
+   }
+   .left_box{
+   	position: absolute;
+   	top: 9rem;
+   	left: 10.9rem;
+   }
+   .please{
+   	width: 100%;
+   	position: absolute;
+   	top: 20rem;
+   	margin-left: 3rem;
+   	font-size: 20px;
+   }
+   .y2018{
+   	width: 7rem;
+   	height: 3.5rem;
+   	position: absolute;
+   	top: 24rem;
+   	left: 8rem;
+   	background: url(images/2018.png) no-repeat;
+   }
+   .line2018{
+   	width: 100%;
+   	height: 1.25rem;
+   	position: absolute;
+   	top: 28rem;
+   	left: 4rem;
+   	background: url(images/down-line.png) no-repeat;
+   }
+   .downimg{
+   	width: 100%;
+   	position: absolute;
+   	bottom: 0;
+   	left: -0.25rem;
+   	display: block;
+   }
+   .downimg img{
+   	width: 110%;
+   	float: left;
    }
    /*
    .right{
@@ -137,16 +202,22 @@
       	<div class="big_box">
       		<div class="star"></div>
       		<div class="head"></div>
-      		<div class="left"></div>
-      	</div>
-        <h2
-        class="ani"
-        swiper-animate-effect="zoomInUp"
-        swiper-animate-duration="1s"
-        swiper-animate-delay="0s"
-        >context</h2>
-        <div class="downimg">
-      		<img src="images/down.png" alt="" />
+      		<div class="left">
+      			<div class="left_left"></div>
+      			<div class="left_box">
+      				<div class="no yuan">元</div>
+	      			<div class="no dan">旦</div>
+	      			<div class="no kuai">快</div>
+	      			<div class="no le">乐</div>
+      			</div>
+      			<div class="right_right"></div>
+      			<p class="please">您收到了一封元旦贺卡，请亲启</p>
+      			<div class="y2018"></div>
+      			<div class="line2018"></div>
+      		</div>
+      		<div class="downimg">
+		      		<img src="images/down.png" alt="" />
+		      	</div>
       	</div>
       </div>
       <div class="swiper-slide">
