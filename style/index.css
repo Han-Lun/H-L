@@ -64,7 +64,7 @@ html, body {
  	right: 1rem;
  	top: 3rem;
  	z-index: 999;
- 	background: url(../images/music.svg) no-repeat;
+ 	background: url(../images/music.svg) no-repeat center 0;
  	background-size: 100%;
  	animation: change 3s linear 0s infinite;
  }
@@ -76,66 +76,86 @@ html, body {
  	background: url(../images/star.png) no-repeat center 0;
  }
  .head{
- 	width: 2.6rem;
+ 	width: 100%;
  	height: 2.3rem;
+ 	padding-left: 1rem;
  	position: absolute;
- 	top: 12.6rem;
- 	left: 10.8rem;
- 	background:#007ebc url(../images/happy.png) no-repeat;
+ 	top: 28%;
+ 	/*background:#007ebc url(../images/happy.png) no-repeat center 0;*/
+ }
+ .head img{
+ 	width: 2.7rem;
+ 	height: 2.3rem;
+ 	display: block;
+ 	margin:auto;
  }
  .left{
- 	width: 18rem;
- 	height: 16.3rem;
+ 	width: 100%;
+ 	height: 25rem;
  	position: absolute;
- 	top: 7.0rem;
- 	left: 0.5rem;
- 	background: url(../images/all.png) no-repeat;
+ 	top: 17%;
+ 	/*background: url(../images/all.png) no-repeat center 0;*/
+ }
+ .left img{
+ 	margin:3rem auto;
+ 	display: block;
  }
  .left_left{
- 	width: 3.5rem;
+ 	width: 10rem;
  	height: 3.12rem;
  	position: absolute;
- 	top: 19rem;
- 	left: 7.5rem;
- 	background: url(../images/leftfu.png) no-repeat;
+ 	top: 20%;
+ 	left:0;
+ 	/*background: url(../images/leftfu.png) no-repeat;*/
+ }
+ .left_left img{
+ 	float: left;
+ 	margin-left: 2rem;
  }
  .right_right{
- 	width: 3.5rem;
+ 	width: 10rem;
  	height: 3.12rem;
  	position: absolute;
- 	top: 19rem;
- 	left: 13.3rem;
- 	background: url(../images/rightfu.png) no-repeat;
+ 	top: 20%;
+ 	right: 0;
+ 	/*background: url(../images/rightfu.png) no-repeat;*/
+ }
+ .right_right img{
+ 	float: right;
+ 	margin-right: 2rem;
  }
  .no{
+ 	float: left;
  	width: 1.4rem;
  	height: 1.4rem;
  	border: 2px solid #fff;
  	border-radius: 50%;
  	color: #000;
- 	margin-bottom: 2px;
+ 	margin-right: 2rem;
+ 	margin-bottom: 1rem;
 	text-align: center;
 	background-color: #1dafdd;
  }
  .left_box{
+ 	width: 7rem;
  	position: absolute;
- 	top: 16rem;
- 	left: 11.5rem;
+ 	top: 40%;
+ 	left: 40%;
  }
  .please{
  	width: 100%;
  	position: absolute;
- 	top: 27rem;
- 	margin-left: 3rem;
- 	font-size: 20px;
+ 	top: 66%;
+ 	margin-left: 1.5rem;
+ 	font-size: 1.25rem;
  }
  .y2018{
  	width: 7rem;
  	height: 3.5rem;
  	position: absolute;
- 	top: 31rem;
- 	left: 8rem;
- 	background: url(../images/2018.png) no-repeat;
+ 	top: 73%;
+ 	left: 34%;
+ 	/*background: url(../images/2018.png) no-repeat;*/
  }
 .line2018{
  	width: 100%;
@@ -165,23 +185,22 @@ html, body {
   	}
   }
 .title{
-	width: 16rem;
-	height: 16rem;
-	margin-left: 2rem;
+	width: 100%;
+	height: 4rem;
 	position: absolute;
-	top: -3rem;
-	background: url(../images/all1.png) no-repeat center 0;
+	top: 10%;
+	background: url(../images/kuang.png) no-repeat center 0;
 }
 .title h1{
 	position: absolute;
-	top: 11rem;
-	left: 5.8rem;
+	top: 11%;
+	left: 31%;
 	color: #fff;
 }
 .er_box{
-	font-size: 25px;
+	font-size: 1.5rem;
 	position: absolute;
-	top: 14rem;
+	top: 24%;
 	padding: 0 2rem;
 	color: #fff;
 }
@@ -189,97 +208,97 @@ html, body {
 	width: 2.1rem;
 	height: 2rem;
 	position: absolute;
-	top: 13rem;
-	right: 1rem;
+	top: 22%;
+	right: 2%;
 	background: url(../images/xuehua.png) no-repeat center 0;
 }
-.xuehua1_fan{top: 18rem;}
-.xuehua2_fan{top: 23rem;}
-.xuehua3_fan{top: 28rem;}
-.xuehua4_fan{top: 33rem;}
+.xuehua1_fan{top: 35%;}
+.xuehua2_fan{top: 47%;}
+.xuehua3_fan{top: 59%;}
+.xuehua4_fan{top: 71%;}
 .xian_fan{
 	width: 2.1rem;
 	height: 2rem;
 	position: absolute;
-	top: 14rem;
-	right: 2rem;
+	top: 26%;
+	right: 8%;
 	background: url(../images/line1.png) no-repeat center 0;
 }
-.xian1_fan{top: 19rem;} 
-.xian2_fan{top: 24rem;}
-.xian3_fan{top: 29rem;}
+.xian1_fan{top: 39%;} 
+.xian2_fan{top: 51%;}
+.xian3_fan{top: 63%;}
 .sm_xuehua_fan{
 	width: 1rem;
 	height: 1rem;
 	position: absolute;
-	top: 16rem;
-	right: 3.5rem;
+	top: 30%;
+	right: 14%;
 	background: url(../images/small-xuehau.png) no-repeat center 0;
 }
-.sm_xuehua1_fan{top: 21rem;}
-.sm_xuehua2_fan{top: 26rem;}
-.sm_xuehua3_fan{top: 31rem;}
+.sm_xuehua1_fan{top: 42%;}
+.sm_xuehua2_fan{top: 54%;}
+.sm_xuehua3_fan{top: 66%;}
 .xianfan_fan{
 	width: 2.1rem;
 	height: 2rem;
 	position: absolute;
-	top: 16.5rem;
-	right: 2rem;
+	top: 32%;
+	right: 6%;
 	background: url(../images/line2.png) no-repeat center 0;
 }
-.xianfan1_fan{top: 21.5rem;}
-.xianfan2_fan{top: 26.5rem;}
-.xianfan3_fan{top: 31.5rem;}
+.xianfan1_fan{top: 44%;}
+.xianfan2_fan{top: 56%;}
+.xianfan3_fan{top: 68%;}
 .xuehua{
 	width: 2.1rem;
 	height: 2rem;
 	position: absolute;
-	top: 13rem;
-	left: 1rem;
+	top: 22%;
+	left: 2%;
 	background: url(../images/xuehua.png) no-repeat center 0;
 }
-.xuehua1{top: 18rem;}
-.xuehua2{top: 23rem;}
-.xuehua3{top: 28rem;}
-.xuehua4{top: 33rem;}
+.xuehua1{top: 35%;}
+.xuehua2{top: 47%;}
+.xuehua3{top: 59%;}
+.xuehua4{top: 71%;}
 .xian{
 	width: 2.1rem;
 	height: 2rem;
 	position: absolute;
-	top: 14rem;
-	left: 2rem;
+	top: 26%;
+	left: 8%;
 	background: url(../images/line2.png) no-repeat center 0;
 }
-.xian1{top: 19rem;} 
-.xian2{top: 24rem;}
-.xian3{top: 29rem;}
+.xian1{top: 38%;} 
+.xian2{top: 50%;}
+.xian3{top: 62%;}
 .sm_xuehua{
 	width: 1rem;
 	height: 1rem;
 	position: absolute;
-	top: 16rem;
-	left: 3.5rem;
+	top: 30%;
+	left: 14%;
 	background: url(../images/small-xuehau.png) no-repeat center 0;
 }
-.sm_xuehua1{top: 21rem;}
-.sm_xuehua2{top: 26rem;}
-.sm_xuehua3{top: 31rem;}
+.sm_xuehua1{top: 42%;}
+.sm_xuehua2{top: 54%;}
+.sm_xuehua3{top: 66%;}
 .xianfan{
 	width: 2.1rem;
 	height: 2rem;
 	position: absolute;
-	top: 16.5rem;
-	left: 2rem;
+	top: 32%;
+	left: 6%;
 	background: url(../images/line1.png) no-repeat center 0;
 }
-.xianfan1{top: 21.5rem;}
-.xianfan2{top: 26.5rem;}
-.xianfan3{top: 31.5rem;}
+.xianfan1{top: 44%;}
+.xianfan2{top: 56%;}
+.xianfan3{top: 68%;}
 .text_zhufu{
-	font-size: 25px;
+	font-size: 1.5rem;
 	position: absolute;
-	top: 16rem;
-	left: 2rem;
+	top: 30%;
+	left: 2%;
 	padding: 0 3rem;
 	color: #fff;
 }
@@ -289,47 +308,53 @@ html, body {
 	width: 100%;
 	height: 20rem;
 }
-.third-title p {
+.third-title h1 {
 	color: #FFFFFF;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	position: absolute;
-	top: 8.3rem;
-	left: 8.5rem;
+	top: 21%;
+	left: 40%;
 }
 .dogimg img {
 	width: 50%;
 	height: 25%;
 	position: absolute;
-	top: 12rem;
-	left: 0.5rem;
+	top: 35%;
+	left: 3%;
 }
 .third-article {
-	width: 10rem;
+	width: 8rem;
 	height: 50rem;
 	position: absolute;
-	top: 14rem;
-	right: 0.5rem;
+	top: 36%;
+	right: 3%;
+	font-size: 1rem;
 	color: #FFFFFF;
 }
 .dogimgs img {
 	width: 50%;
 	height: 25%;
 	position: absolute;
-	top: 25rem;
-	right: 0.5rem;
+	top: 61%;
+	right: 3%;
 }
 .third-articles {
-	width: 10rem;
+	width: 8rem;
 	height: 50rem;
 	position: absolute;
-	top: 27rem;
-	left: 0.5rem;
+	top: 61%;
+	left: 3%;
+	font-size: 1rem;
 	color: #FFFFFF;
 }
 .big_box>p {
 	font-size: 1.25rem;
 	color: #FFFFFF;
 	position: absolute;
+}
+.yuandan{
+	position: absolute;
+	top: 0;
 }
 .final-1 {
 	top: 14rem;
